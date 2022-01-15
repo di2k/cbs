@@ -8,4 +8,4 @@ from . import authors
 # from . import rsd
 # from . import rsd_utils
 # from . import sidebar
-# from . import vis_utils
+from . import vis_utils
