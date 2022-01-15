@@ -1,1 +1,4 @@
 numpy_financial
+numpy
+pandas
+matplotlib.pyplot
