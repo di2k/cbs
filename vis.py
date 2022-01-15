@@ -1,5 +1,5 @@
 import streamlit as st
-from vis_helpers import sidebar, authors, main_page, mcb, cbs, hitung
+from vis_helpers import sidebar, authors, main_page, mcb, cbs
 
 def main():
     """
