@@ -9,7 +9,9 @@ def main():
     
     st.title('Capital Budgeting Simulator')
 
-    st.markdown(r'Analisis investasi proyek dengan metode PP, DPP, NPV, EAA, IRR, PI', unsafe_allow_html=True)
+    st.markdown(r'<b>Analisis investasi proyek dengan metode PP, DPP, NPV, EAA, IRR, PI</b>', unsafe_allow_html=True)
+    st.markdown(r'Isi <i>Cash Flow</i> dengan pembatas tiap tahun menggunakan tanda koma ( , )', unsafe_allow_html=True)
+    st.markdown(r'Klik <b>Submit</b> untuk melakukan proses simulasi.', unsafe_allow_html=True)
 
     ci1, ci2, ci3 = st.columns(3)
     input_first_cash_flow = ci1.text_input("Cash Flow Proyek A", "-10000,9000,3000,1200")
