@@ -140,22 +140,11 @@ def main():
         st.markdown("<h5 style='text-align: center;'>NPV Profile</h5>", unsafe_allow_html=True)  
         st.markdown("<p style='text-align: center;'> (Sensitivity Test for NPV)</p>", unsafe_allow_html=True)  
 
+        first_irr, second_irr, diff_cash_flow_irr, df_npv = hitung.npv_profile(first_cash_flow, second_cash_flow)
+
+        if input_second_cash_flow == '0,0':
+            df_npv.drop('Project B', inplace=True, axis=1)
         st.line_chart(df_npv)
-
-        # chart = (
-        # alt.Chart(
-        #     data=df_npv,
-        #     title="Your title",
-        # )
-        # .mark_line()
-        # .encode(
-        #     x=alt.X("Discount Rate", axis=alt.Axis(title="Discount Rate")),
-        #     y=alt.Y("Project A", axis=alt.Axis(title="Project A")),
-        # ))
-
-        # st.altair_chart(chart)
-
-
 
 
 
